@@ -9,17 +9,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:workspaces/app"
   dependencies:
-    bar: "portal:../lib"
+    lin-portal: "portal:../lib"
     typescript: ~4.5.0
   languageName: unknown
-  linkType: soft
-
-"bar@portal:../lib::locator=app%40workspace%3Aworkspaces%2Fapp":
-  version: 0.0.0-use.local
-  resolution: "bar@portal:../lib::locator=app%40workspace%3Aworkspaces%2Fapp"
-  dependencies:
-    typescript: ~4.5.0
-  languageName: node
   linkType: soft
 
 "lib@workspace:workspaces/lib":
@@ -28,6 +20,14 @@ __metadata:
   dependencies:
     typescript: ~4.5.0
   languageName: unknown
+  linkType: soft
+
+"lin-portal@portal:../lib::locator=app%40workspace%3Aworkspaces%2Fapp":
+  version: 0.0.0-use.local
+  resolution: "lin-portal@portal:../lib::locator=app%40workspace%3Aworkspaces%2Fapp"
+  dependencies:
+    typescript: ~4.5.0
+  languageName: node
   linkType: soft
 
 "test@workspace:.":

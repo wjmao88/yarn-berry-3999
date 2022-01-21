@@ -55,17 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./workspaces/app/",
           "packageDependencies": [
             ["app", "workspace:workspaces/app"],
-            ["bar", "portal:../lib::locator=app%40workspace%3Aworkspaces%2Fapp"],
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["bar", [
-        ["portal:../lib::locator=app%40workspace%3Aworkspaces%2Fapp", {
-          "packageLocation": "./workspaces/lib/",
-          "packageDependencies": [
-            ["bar", "portal:../lib::locator=app%40workspace%3Aworkspaces%2Fapp"],
+            ["lin-portal", "portal:../lib::locator=app%40workspace%3Aworkspaces%2Fapp"],
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"]
           ],
           "linkType": "SOFT",
@@ -76,6 +66,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./workspaces/lib/",
           "packageDependencies": [
             ["lib", "workspace:workspaces/lib"],
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["lin-portal", [
+        ["portal:../lib::locator=app%40workspace%3Aworkspaces%2Fapp", {
+          "packageLocation": "./workspaces/lib/",
+          "packageDependencies": [
+            ["lin-portal", "portal:../lib::locator=app%40workspace%3Aworkspaces%2Fapp"],
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"]
           ],
           "linkType": "SOFT",

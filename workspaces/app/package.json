@@ -2,7 +2,7 @@
   "name": "app",
   "version": "1.0.0",
   "dependencies": {
-    "bar": "portal:../lib",
+    "lib-portal": "portal:../lib",
     "typescript": "~4.5.0"
   }
 }
